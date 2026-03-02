@@ -4038,11 +4038,323 @@ The file /Users/buluktaev/Documents/GitHub/blog/.gitignore has been updated succ
 ```
 </details></tool-use>
 
-_**Agent (claude-sonnet-4-6 2026-03-02 08:53:43Z)**_
+_**Agent (claude-sonnet-4-6 2026-03-02 08:53:50Z)**_
 
 <tool-use data-tool-type="shell" data-tool-name="Bash"><details>
 <summary>Tool use: **Bash**</summary>
 Stage all changes and review
 
 `git add -A && git status --short`
+
+```text
+M  .gitignore
+A  .specstory/.project.json
+A  .specstory/cli/config.toml
+A  .specstory/history/2026-03-02_08-28-05Z-command-message-superpowers-executing.md
+D  astro.config.ts
+D  eslint.config.js
+D  public/astropaper-og.jpg
+D  public/favicon.svg
+A  public/robots.txt
+A  public/sitemap-0.xml
+A  public/sitemap.xml
+D  src/assets/icons/IconArchive.svg
+D  src/assets/icons/IconArrowLeft.svg
+D  src/assets/icons/IconArrowNarrowUp.svg
+D  src/assets/icons/IconArrowRight.svg
+D  src/assets/icons/IconBrandX.svg
+D  src/assets/icons/IconCalendar.svg
+D  src/assets/icons/IconChevronLeft.svg
+D  src/assets/icons/IconChevronRight.svg
+D  src/assets/icons/IconEdit.svg
+D  src/assets/icons/IconFacebook.svg
+D  src/assets/icons/IconGitHub.svg
+D  src/assets/icons/IconHash.svg
+D  src/assets/icons/IconLinkedin.svg
+D  src/assets/icons/IconMail.svg
+D  src/assets/icons/IconMenuDeep.svg
+D  src/assets/icons/IconMoon.svg
+D  src/assets/icons/IconPinterest.svg
+D  src/assets/icons/IconRss.svg
+D  src/assets/icons/IconSearch.svg
+D  src/assets/icons/IconSunHigh.svg
+D  src/assets/icons/IconTelegram.svg
+D  src/assets/icons/IconWhatsapp.svg
+D  src/assets/icons/IconX.svg
+D  src/assets/images/AstroPaper-v3.png
+D  src/assets/images/AstroPaper-v4.png
+D  src/assets/images/AstroPaper-v5.png
+D  src/assets/images/forrest-gump-quote.png
+D  src/components/BackButton.astro
+D  src/components/BackToTopButton.astro
+D  src/components/Breadcrumb.astro
+D  src/components/Card.astro
+D  src/components/Datetime.astro
+D  src/components/EditPost.astro
+D  src/components/Footer.astro
+D  src/components/Header.astro
+D  src/components/LinkButton.astro
+D  src/components/Pagination.astro
+D  src/components/ShareLinks.astro
+D  src/components/Socials.astro
+D  src/components/Tag.astro
+D  src/config.ts
+D  src/constants.ts
+D  src/content.config.ts
+D  src/data/blog/_releases/astro-paper-2.md
+D  src/data/blog/_releases/astro-paper-3.md
+D  src/data/blog/_releases/astro-paper-4.md
+D  src/data/blog/_releases/astro-paper-5.md
+D  src/data/blog/adding-new-post.md
+D  src/data/blog/customizing-astropaper-theme-color-schemes.md
+D  src/data/blog/dynamic-og-images.md
+D  src/data/blog/examples/example-draft-post.md
+D  src/data/blog/examples/portfolio-website-development.md
+D  src/data/blog/examples/tailwind-typography.md
+D  src/data/blog/examples/terminal-development.md
+D  src/data/blog/how-to-add-latex-equations-in-blog-posts.md
+D  src/data/blog/how-to-configure-astropaper-theme.md
+D  src/data/blog/how-to-integrate-giscus-comments.md
+D  src/data/blog/how-to-update-dependencies.md
+D  src/data/blog/kak-ya-vmeste-s-claude-code-zapustil-svoy-blog.md
+D  src/data/blog/predefined-color-schemes.md
+D  src/data/blog/setting-dates-via-git-hooks.md
+D  src/env.d.ts
+D  src/layouts/AboutLayout.astro
+D  src/layouts/Layout.astro
+D  src/layouts/Main.astro
+D  src/layouts/PostDetails.astro
+D  src/pages/404.astro
+D  src/pages/about.md
+D  src/pages/archives/index.astro
+D  src/pages/index.astro
+D  src/pages/og.png.ts
+D  src/pages/posts/[...page].astro
+D  src/pages/posts/[...slug]/index.astro
+D  src/pages/posts/[...slug]/index.png.ts
+D  src/pages/robots.txt.ts
+D  src/pages/rss.xml.ts
+D  src/pages/search.astro
+D  src/pages/tags/[tag]/[...page].astro
+D  src/pages/tags/index.astro
+D  src/remark-collapse.d.ts
+D  src/scripts/theme.ts
+D  src/styles/global.css
+D  src/styles/typography.css
+D  src/utils/generateOgImages.ts
+D  src/utils/getPath.ts
+D  src/utils/getPostsByGroupCondition.ts
+D  src/utils/getPostsByTag.ts
+D  src/utils/getSortedPosts.ts
+D  src/utils/getUniqueTags.ts
+D  src/utils/loadGoogleFont.ts
+D  src/utils/og-templates/post.js
+D  src/utils/og-templates/site.js
+D  src/utils/postFilter.ts
+D  src/utils/slugify.ts
+D  src/utils/transformers/fileName.js
+```
+</details></tool-use>
+
+_**Agent (claude-sonnet-4-6 2026-03-02 08:54:04Z)**_
+
+<tool-use data-tool-type="shell" data-tool-name="Bash"><details>
+<summary>Tool use: **Bash**</summary>
+Commit cleanup and build verification
+
+`git commit -m "chore: production build verified, remove Astro remnants, update .gitignore"`
+
+```text
+[blog/kak-ya-vmeste-s-claude-code-zapustil-svoy-blog 2f4e79c] chore: production build verified, remove Astro remnants, update .gitignore
+ 106 files changed, 4160 insertions(+), 5663 deletions(-)
+ create mode 100644 .specstory/.project.json
+ create mode 100644 .specstory/cli/config.toml
+ create mode 100644 .specstory/history/2026-03-02_08-28-05Z-command-message-superpowers-executing.md
+ delete mode 100644 astro.config.ts
+ delete mode 100644 eslint.config.js
+ delete mode 100644 public/astropaper-og.jpg
+ delete mode 100644 public/favicon.svg
+ create mode 100644 public/robots.txt
+ create mode 100644 public/sitemap-0.xml
+ create mode 100644 public/sitemap.xml
+ delete mode 100644 src/assets/icons/IconArchive.svg
+ delete mode 100644 src/assets/icons/IconArrowLeft.svg
+ delete mode 100644 src/assets/icons/IconArrowNarrowUp.svg
+ delete mode 100644 src/assets/icons/IconArrowRight.svg
+ delete mode 100644 src/assets/icons/IconBrandX.svg
+ delete mode 100644 src/assets/icons/IconCalendar.svg
+ delete mode 100644 src/assets/icons/IconChevronLeft.svg
+ delete mode 100644 src/assets/icons/IconChevronRight.svg
+ delete mode 100644 src/assets/icons/IconEdit.svg
+ delete mode 100644 src/assets/icons/IconFacebook.svg
+ delete mode 100644 src/assets/icons/IconGitHub.svg
+ delete mode 100644 src/assets/icons/IconHash.svg
+ delete mode 100644 src/assets/icons/IconLinkedin.svg
+ delete mode 100644 src/assets/icons/IconMail.svg
+ delete mode 100644 src/assets/icons/IconMenuDeep.svg
+ delete mode 100644 src/assets/icons/IconMoon.svg
+ delete mode 100644 src/assets/icons/IconPinterest.svg
+ delete mode 100644 src/assets/icons/IconRss.svg
+ delete mode 100644 src/assets/icons/IconSearch.svg
+ delete mode 100644 src/assets/icons/IconSunHigh.svg
+ delete mode 100644 src/assets/icons/IconTelegram.svg
+ delete mode 100644 src/assets/icons/IconWhatsapp.svg
+ delete mode 100644 src/assets/icons/IconX.svg
+ delete mode 100644 src/assets/images/AstroPaper-v3.png
+ delete mode 100644 src/assets/images/AstroPaper-v4.png
+ delete mode 100644 src/assets/images/AstroPaper-v5.png
+ delete mode 100644 src/assets/images/forrest-gump-quote.png
+ delete mode 100644 src/components/BackButton.astro
+ delete mode 100644 src/components/BackToTopButton.astro
+ delete mode 100644 src/components/Breadcrumb.astro
+ delete mode 100644 src/components/Card.astro
+ delete mode 100644 src/components/Datetime.astro
+ delete mode 100644 src/components/EditPost.astro
+ delete mode 100644 src/components/Footer.astro
+ delete mode 100644 src/components/Header.astro
+ delete mode 100644 src/components/LinkButton.astro
+ delete mode 100644 src/components/Pagination.astro
+ delete mode 100644 src/components/ShareLinks.astro
+ delete mode 100644 src/components/Socials.astro
+ delete mode 100644 src/components/Tag.astro
+ delete mode 100644 src/config.ts
+ delete mode 100644 src/constants.ts
+ delete mode 100644 src/content.config.ts
+ delete mode 100644 src/data/blog/_releases/astro-paper-2.md
+ delete mode 100644 src/data/blog/_releases/astro-paper-3.md
+ delete mode 100644 src/data/blog/_releases/astro-paper-4.md
+ delete mode 100644 src/data/blog/_releases/astro-paper-5.md
+ delete mode 100644 src/data/blog/adding-new-post.md
+ delete mode 100644 src/data/blog/customizing-astropaper-theme-color-schemes.md
+ delete mode 100644 src/data/blog/dynamic-og-images.md
+ delete mode 100644 src/data/blog/examples/example-draft-post.md
+ delete mode 100644 src/data/blog/examples/portfolio-website-development.md
+ delete mode 100644 src/data/blog/examples/tailwind-typography.md
+ delete mode 100644 src/data/blog/examples/terminal-development.md
+ delete mode 100644 src/data/blog/how-to-add-latex-equations-in-blog-posts.md
+ delete mode 100644 src/data/blog/how-to-configure-astropaper-theme.md
+ delete mode 100644 src/data/blog/how-to-integrate-giscus-comments.md
+ delete mode 100644 src/data/blog/how-to-update-dependencies.md
+ delete mode 100644 src/data/blog/kak-ya-vmeste-s-claude-code-zapustil-svoy-blog.md
+ delete mode 100644 src/data/blog/predefined-color-schemes.md
+ delete mode 100644 src/data/blog/setting-dates-via-git-hooks.md
+ delete mode 100644 src/env.d.ts
+ delete mode 100644 src/layouts/AboutLayout.astro
+ delete mode 100644 src/layouts/Layout.astro
+ delete mode 100644 src/layouts/Main.astro
+ delete mode 100644 src/layouts/PostDetails.astro
+ delete mode 100644 src/pages/404.astro
+ delete mode 100644 src/pages/about.md
+ delete mode 100644 src/pages/archives/index.astro
+ delete mode 100644 src/pages/index.astro
+ delete mode 100644 src/pages/og.png.ts
+ delete mode 100644 src/pages/posts/[...page].astro
+ delete mode 100644 src/pages/posts/[...slug]/index.astro
+ delete mode 100644 src/pages/posts/[...slug]/index.png.ts
+ delete mode 100644 src/pages/robots.txt.ts
+ delete mode 100644 src/pages/rss.xml.ts
+ delete mode 100644 src/pages/search.astro
+ delete mode 100644 src/pages/tags/[tag]/[...page].astro
+ delete mode 100644 src/pages/tags/index.astro
+ delete mode 100644 src/remark-collapse.d.ts
+ delete mode 100644 src/scripts/theme.ts
+ delete mode 100644 src/styles/global.css
+ delete mode 100644 src/styles/typography.css
+ delete mode 100644 src/utils/generateOgImages.ts
+ delete mode 100644 src/utils/getPath.ts
+ delete mode 100644 src/utils/getPostsByGroupCondition.ts
+ delete mode 100644 src/utils/getPostsByTag.ts
+ delete mode 100644 src/utils/getSortedPosts.ts
+ delete mode 100644 src/utils/getUniqueTags.ts
+ delete mode 100644 src/utils/loadGoogleFont.ts
+ delete mode 100644 src/utils/og-templates/post.js
+ delete mode 100644 src/utils/og-templates/site.js
+ delete mode 100644 src/utils/postFilter.ts
+ delete mode 100644 src/utils/slugify.ts
+ delete mode 100644 src/utils/transformers/fileName.js
+```
+</details></tool-use>
+
+_**Agent (claude-sonnet-4-6 2026-03-02 08:54:08Z)**_
+
+Теперь пушим ветку. Это публичное действие — подтверждаю намерение согласно плану:
+
+_**Agent (claude-sonnet-4-6 2026-03-02 08:54:21Z)**_
+
+<tool-use data-tool-type="shell" data-tool-name="Bash"><details>
+<summary>Tool use: **Bash**</summary>
+Push branch to remote
+
+`git push origin blog/kak-ya-vmeste-s-claude-code-zapustil-svoy-blog 2>&1`
+
+```text
+To https://github.com/buluktaev/blog
+   b52a9d2..2f4e79c  blog/kak-ya-vmeste-s-claude-code-zapustil-svoy-blog -> blog/kak-ya-vmeste-s-claude-code-zapustil-svoy-blog
+```
+</details></tool-use>
+
+_**Agent (claude-sonnet-4-6 2026-03-02 08:54:24Z)**_
+
+Ветка запушена. Теперь создаём PR:
+
+_**Agent (claude-sonnet-4-6 2026-03-02 08:54:37Z)**_
+
+<tool-use data-tool-type="shell" data-tool-name="Bash"><details>
+<summary>Tool use: **Bash**</summary>
+Create pull request
+
+```bash
+gh pr create --title "feat: migrate blog to Next.js 15" --body "$(cat <<'EOF'
+Replaces Astro Paper with a custom Next.js 15 blog.
+
+## Changes
+
+- App Router + MDX via `next-mdx-remote`
+- Dark/light theme with `next-themes` (system default)
+- Google Sans + Geist Mono fonts
+- Sidebar TOC on post pages
+- `AnimatedCard` Framer Motion demo component in first post
+- RSS feed at `/rss.xml`
+- Sitemap + `robots.txt` via `next-sitemap`
+
+## Stack
+
+Next.js 15.5 · TypeScript · Tailwind CSS v4 · next-mdx-remote 5 · rehype-pretty-code · Framer Motion 12
+
+## Verification
+
+- [x] `npm run build` succeeds, 6 static pages generated
+- [x] TypeScript clean (0 errors)
+- [x] Sitemap generated at `/sitemap.xml`
+- [x] Post migrated to `content/blog/*.mdx` with intact frontmatter
+EOF
+)"
+```
+
+```text
+Warning: 1 uncommitted change
+https://github.com/buluktaev/blog/pull/3
+```
+</details></tool-use>
+
+_**Agent (claude-sonnet-4-6 2026-03-02 08:54:40Z)**_
+
+<tool-use data-tool-type="shell" data-tool-name="Bash"><details>
+<summary>Tool use: **Bash**</summary>
+Check uncommitted change
+
+`git status --short`
+
+```text
+ M .specstory/history/2026-03-02_08-28-05Z-command-message-superpowers-executing.md
+```
+</details></tool-use>
+
+_**Agent (claude-sonnet-4-6 2026-03-02 08:54:45Z)**_
+
+<tool-use data-tool-type="shell" data-tool-name="Bash"><details>
+<summary>Tool use: **Bash**</summary>
+Commit and push specstory update
+
+`git add .specstory/ && git commit -m "chore: update session history" && git push`
 </details></tool-use>
