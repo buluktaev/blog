@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://blog-buluktaev.vercel.app
+
+# Sitemaps
+Sitemap: https://blog-buluktaev.vercel.app/sitemap.xml

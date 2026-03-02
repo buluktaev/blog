@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@layer base {
+  :root {
+    --bg: #fafafa;
+    --text: #111113;
+    --text-muted: #6b7280;
+    --accent: #4f46e5;
+    --border: #e5e7eb;
+    --code-bg: #f4f4f5;
+    --font-google-sans: 'Google Sans', system-ui, sans-serif;
+  }
+
+  .dark {
+    --bg: #111113;
+    --text: #ededed;
+    --text-muted: #6b7280;
+    --accent: #818cf8;
+    --border: #27272a;
+    --code-bg: #18181b;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Google Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  code,
+  pre {
+    font-family: var(--font-geist-mono), monospace;
+  }
+
+  /* rehype-pretty-code overrides */
+  pre {
+    background-color: var(--code-bg) !important;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  [data-highlighted-line] {
+    background-color: rgba(79, 70, 229, 0.1);
+  }
+}
