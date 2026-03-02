@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { GeistMono } from 'geist/font/mono'
 import { Providers } from '@/components/Providers'
+import { Header } from '@/components/Header'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -25,7 +26,10 @@ export default function RootLayout({
         />
       </head>
       <body className={GeistMono.variable}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   )
