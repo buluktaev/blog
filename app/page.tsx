@@ -6,16 +6,6 @@ export default function Home() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
-      {/* Hero */}
-      <section className="mb-16">
-        <h1 className="mb-3 text-3xl font-semibold tracking-tight text-[var(--text)]">
-          Bulat
-        </h1>
-        <p className="text-lg text-[var(--text-muted)]">
-          Писать о дизайне и AI-инструментах.
-        </p>
-      </section>
-
       {/* Post list */}
       <section>
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-[var(--text-muted)]">

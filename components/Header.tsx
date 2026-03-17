@@ -9,7 +9,7 @@ export function Header() {
           href="/"
           className="text-sm font-medium text-[var(--text)] hover:text-[var(--accent)] transition-colors"
         >
-          Bulat
+          Sanan
         </Link>
         <ThemeToggle />
       </div>

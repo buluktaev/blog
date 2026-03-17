@@ -4,7 +4,7 @@
 Active — Next.js 15 блог смёрджен в main, деплоится на Vercel.
 
 ## Description
-Личный блог Булата (продуктовый дизайнер) о дизайне и AI-инструментах.
+Личный блог Санана (продуктовый дизайнер) о дизайне и AI-инструментах.
 Next.js 15 App Router, MDX, Framer Motion демо. Деплой — Vercel (blog-buluktaev.vercel.app).
 Контент создаётся через content-factory pipeline (`~/.claude/skills/content-factory/`).
 
@@ -40,7 +40,6 @@ Next.js 15 App Router, MDX, Framer Motion демо. Деплой — Vercel (blo
 - Uncommitted: нет (чисто)
 
 ## Unresolved Problems
-- `~/.claude/skills/content-factory/config/project.md` устарел: `ssg: astro`, `content_path: src/data/blog/` → нужно обновить на `ssg: nextjs`, `content_path: content/blog/`
 - Google Fonts (`Google+Sans`) — проверить правильное имя семейства в URL
 - Vercel деплой после миграции — проверить вручную на blog-buluktaev.vercel.app
 
@@ -51,11 +50,10 @@ Next.js 15 App Router, MDX, Framer Motion демо. Деплой — Vercel (blo
 - [2026-03-02] npm вместо pnpm — план миграции требовал npm, pnpm-lock.yaml оставлен как артефакт
 
 ## Next Steps
-1. Обновить `~/.claude/skills/content-factory/config/project.md` — `ssg: nextjs`, `content_path: content/blog/`
-2. Проверить деплой на blog-buluktaev.vercel.app (тема, TOC, AnimatedCard)
-3. Написать второй пост через `/content-factory` (тема: как устроен скилл изнутри)
-4. Проверить Google Fonts URL (`Google+Sans`)
-5. Добавить OG-изображения для постов
+1. Проверить деплой на blog-buluktaev.vercel.app (тема, TOC, AnimatedCard)
+2. Написать второй пост через `/content-factory` (тема: как устроен скилл изнутри)
+3. Проверить Google Fonts URL (`Google+Sans`)
+4. Добавить OG-изображения для постов
 
 ## Session History
 - [2026-03-02] Полная миграция Astro Paper → Next.js 15: 14 задач, 15 коммитов, PR #3 смёрджен

@@ -5,8 +5,8 @@ import { Header } from '@/components/Header'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: { default: 'Bulat', template: '%s | Bulat' },
-  description: 'Писать о дизайне и AI-инструментах',
+  title: { default: 'Sanan', template: '%s | Sanan' },
+  description: 'Блог о дизайне и AI-инструментах',
   metadataBase: new URL('https://blog-buluktaev.vercel.app'),
 }
 

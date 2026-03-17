@@ -18,9 +18,9 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Bulat</title>
+    <title>Sanan</title>
     <link>${baseUrl}</link>
-    <description>Писать о дизайне и AI-инструментах</description>
+    <description>Блог о дизайне и AI-инструментах</description>
     ${items}
   </channel>
 </rss>`

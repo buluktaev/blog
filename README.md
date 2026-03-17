@@ -1,4 +1,4 @@
-# Bulat's Blog
+# Sanan's Blog
 
 Personal blog about design and AI tools. Built with Next.js 15, MDX, and deployed on Vercel.
 
@@ -62,7 +62,7 @@ Your content here.
 blog/
 ├── app/
 │   ├── layout.tsx          # Root layout, fonts, providers
-│   ├── page.tsx            # Home: hero + post list
+│   ├── page.tsx            # Home: post list
 │   └── blog/[slug]/
 │       └── page.tsx        # Post page with MDX + TOC
 ├── components/
@@ -154,7 +154,7 @@ tags: ["тег1", "тег2"]
 blog/
 ├── app/
 │   ├── layout.tsx          # Корневой layout, шрифты, провайдеры
-│   ├── page.tsx            # Главная: hero + список постов
+│   ├── page.tsx            # Главная: список постов
 │   └── blog/[slug]/
 │       └── page.tsx        # Страница поста с MDX + TOC
 ├── components/
